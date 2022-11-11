@@ -4,24 +4,14 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <motion.div className="home container" animate={{
-      marginTop: 200,
-      opacity: 0.2,
-      rotateZ: 180
+    <motion.div className="home container" initial={{opacity: 0 }} animate={{
+      opacity: 1,
     }}>
-      <motion.h2 animate={{
-        scale: 2,
-        color: '#ff2994',
-      }}>
+      <h2>
         Welcome to Pizza Joint
-      </motion.h2>
-      <br />
+      </h2>
       <Link to="/base">
-        <motion.button
-          animate={{
-            scale: 1.5,
-          }}
-        >
+        <motion.button>
           Create Your Pizza
         </motion.button>
       </Link>
