@@ -33,9 +33,9 @@ const Base = ({ addBase, pizza }) => {
   return (
     <motion.div
       className="base container"
+      variants={containerVariants}
       initial="hidden"
       animate="visible"
-      variants={containerVariants}
     >
       <h3>Step 1: Choose Your Base</h3>
       <ul>
